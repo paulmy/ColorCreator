@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Color"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <TableLayout
+        android:id="@+id/tbl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tvColorRText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Red"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tvColorGText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Green"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tvColorBText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Blue"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <SeekBar
+                android:id="@+id/seekRed"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="255"
+                android:minWidth="20dp"
+                android:progress="127" />
+
+
+            <SeekBar
+                android:id="@+id/seekGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="255"
+                android:minWidth="20dp"
+                android:progress="127"
+                android:verticalScrollbarPosition="left" />
+
+            <SeekBar
+                android:id="@+id/seekBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="255"
+                android:minWidth="20dp"
+                android:progress="127"
+                android:verticalScrollbarPosition="left" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tvRnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Rnumber"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tvGnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Gnumber"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tvBnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Bnumber"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
